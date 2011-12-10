@@ -1,4 +1,4 @@
-Smmooth animated tooltip
+Smooth animated tooltip
 ===
 
 * Live example: [here](http://lab.victorcoulon.fr/css/smooth-tooltip/)  
