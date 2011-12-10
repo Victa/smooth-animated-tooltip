@@ -55,14 +55,14 @@ body{
     margin-top:-13px;
 }
     [href="#open"] {
-        width:32px;
-        height:27px;
+        width:26px;
+        height:26px;
         display:block;                
-        font:14px/29px 'WebSymbolsRegular',sans-serif;  
+        font:14px/28px 'WebSymbolsRegular',sans-serif;  
         letter-spacing:1px;
         color: #444;
         text-decoration:none;
-        text-align:center;
+        padding:0 0 0 6px;
         text-shadow: 0 1px 0 rgba(255,255,255,0.5);      
         background-color: rgba(217,223,230,0.98);
         background-repeat: repeat;
@@ -72,11 +72,11 @@ body{
         background-image: -o-linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg'); 
         background-image: linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg');
         border:1px solid #AAA;                                                                                 
-        -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
-        -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
-        -o-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
-        -ms-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
-        box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 1px 1px white;
+        -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 1px 1px white;
+        -o-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 1px 1px white;
+        -ms-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 1px 1px white;
+        box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 1px 1px white;
         -webkit-border-radius:4px; 
         -moz-border-radius:4px; 
         -o-border-radius:4px; 
