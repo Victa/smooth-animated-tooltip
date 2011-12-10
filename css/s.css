@@ -39,13 +39,13 @@ body{
 }
 
 /* Share links */
-[href^="https://github.com/Victa"]{
+[href^="https://github.com/Victa"],[href^="http://dribbble.com"]{
     position:fixed;bottom:20px;right:20px;    
     text-decoration:none;color:#53677e;font-size:11px;text-shadow:0 1px 0 white;
-}
-    [href^="https://github.com/victa"]:hover{color:#7d91a9;} 
+}   
+[href^="http://dribbble.com"]{left:20px;right:auto}    
+    [href^="https://github.com/victa"]:hover,[href^="http://dribbble.com"]:hover{color:#7d91a9;} 
     
-.twitter-share-button{position:fixed;bottom:20px;left:20px}    
     
 /* Box */
 .box {
