@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Smooth animated tooltip</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/s.css" />
+</head>
+<body>
+                   
+<div class="box">    
+    <a href="#open"><span>&#83;</span><span >&#123;</span></a>   
+    <div class="tooltip">
+        <ul>                         
+            <li><a href="#">Help</a></li>            
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>          
+    </div>         
+</div>        
+
+<a href="https://github.com/Victa/smooth-animated-tooltip">fork the source on github</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="Smooth animated tooltip #css3" data-via="_victa" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>                                                                                        
+
+<!-- JS -->            
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+$(function() {     
+    // A bit of jQuery to open/close the tooltip
+    var $tooltip = $('.tooltip'),
+        $box = $('.box');
+
+    $box.delegate('[href="#open"]', 'click', function(e) {
+        e.preventDefault();  
+        var $this = $(this);           
+        ($this, $tooltip).toggleClass('active');
+                                 
+        if($tooltip.hasClass('active')) {           
+            
+            $(document).bind('click.closetooltip', function(e) {
+                if($(e.target).parents('.box').length === 0) {
+                    ($this, $tooltip).removeClass('active');  
+                    $(document).unbind('click.closetooltip');
+                }
+            });  
+            
+        } else {
+            $(document).unbind('click.closetooltip');
+        }
+    });
+});
+</script>
+</body>
+</html>

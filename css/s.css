@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+
+/* Webs symbols fontface */
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Layout */          
+html{height:100%;}      
+body{
+    font:13px/1.231 'Lucida-grande',sans-serif;
+    height:100%;
+    background-color: rgba(217,223,230,0.98);
+    background-repeat: repeat;
+    background-image: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 100%), -moz-linear-gradient(top, rgba(217,223,230,0.98), rgba(217,223,230,0.98)), url('../img/pattern.jpg');
+    background-image: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 100%), -ms-linear-gradient(top, rgba(217,223,230,0.98), rgba(217,223,230,0.98)), url('../img/pattern.jpg');
+    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%), -webkit-linear-gradient(top, rgba(217,223,230,0.98), rgba(217,223,230,0.98)), url('../img/pattern.jpg');
+    background-image: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 100%), -o-linear-gradient(top, rgba(217,223,230,0.98), rgba(217,223,230,0.98)), url('../img/pattern.jpg'); 
+    background-image: radial-gradient(center, ellipse cover, rgba(255,255,255,.4) 0%,rgba(255,255,255,0) 100%), linear-gradient(top, rgba(217,223,230,0.98), rgba(217,223,230,0.98)), url('../img/pattern.jpg');
+}
+
+/* Share links */
+[href^="https://github.com/Victa"]{
+    position:fixed;bottom:20px;right:20px;    
+    text-decoration:none;color:#53677e;font-size:11px;text-shadow:0 1px 0 white;
+}
+    [href^="https://github.com/victa"]:hover{color:#7d91a9;} 
+    
+.twitter-share-button{position:fixed;bottom:20px;left:20px}    
+    
+/* Box */
+.box {
+    position:fixed;
+    top:50%;left:50%;
+    margin-left:-16px;
+    margin-top:-13px;
+}
+    [href="#open"] {
+        width:32px;
+        height:27px;
+        display:block;                
+        font:14px/29px 'WebSymbolsRegular',sans-serif;  
+        letter-spacing:1px;
+        color: #444;
+        text-decoration:none;
+        text-align:center;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.5);      
+        background-color: rgba(217,223,230,0.98);
+        background-repeat: repeat;
+        background-image: -moz-linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg');
+        background-image: -ms-linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg');
+        background-image: -webkit-linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg');
+        background-image: -o-linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg'); 
+        background-image: linear-gradient(top, rgba(217,223,230,0.98), rgba(170,170,170,0.98)), url('../img/pattern.jpg');
+        border:1px solid #AAA;                                                                                 
+        -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        -o-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        -ms-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        box-shadow:inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(0,0,0,0.4), 0 0 1px rgba(255,255,255,0.5);
+        -webkit-border-radius:4px; 
+        -moz-border-radius:4px; 
+        -o-border-radius:4px; 
+        -ms-border-radius:4px; 
+        border-radius:4px;      
+    }   
+    [href="#open"]:hover,[href="#open"]:active,[href="#open"].active { color:#222; }
+
+/* Tooltip */
+.tooltip {         
+    background: rgba(0, 0, 0,.6);
+    color: white;
+    font-weight: bold;
+    padding: 10px 12px 7px;
+    position:absolute;   
+    bottom:40px;
+    min-width:40px;     
+    right:-3px;
+    text-transform:none;
+    text-shadow:none;    
+    font-size:11px;
+    -webkit-box-shadow:0 2px 6px rgba(0,0,0,0.4);    
+    -moz-box-shadow:0 2px 6px rgba(0,0,0,0.4);
+    -ms-box-shadow:0 2px 6px rgba(0,0,0,0.4);
+    -o-box-shadow:0 2px 6px rgba(0,0,0,0.4);
+    box-shadow:0 2px 6px rgba(0,0,0,0.4);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;    
+}	
+
+.tooltip ul { text-align: right; }              
+    .tooltip li { margin-bottom: 2px; }       
+    .tooltip a { text-decoration:none;color: #EEE;font-weight: bold;}     
+        .tooltip a:hover{text-decoration:none;color:#FFF;}    
+        
+.tooltip:before {                                       
+    content:"";                       
+    display: block;position: absolute;
+    right: 13px;bottom:-14px;  
+    width: 0;height: 0;
+    border-color: rgba(0, 0, 0, 0.44) transparent transparent transparent;
+    border-style:solid;
+    border-width:7px;
+}
+
+/* Tooltip Animations */
+.tooltip{
+   visibility:hidden;
+   opacity:0;
+   -webkit-transform: scale(0.1) skew(50deg) translate(-400px,200px);
+   -moz-transform: scale(0.1) skew(50deg) translate(-400px,200px);
+   -ms-transform: scale(0.1) skew(50deg) translate(-400px,200px);
+   -o-transform: scale(0.1) skew(50deg) translate(-400px,200px);
+   transform: scale(0.1) skew(50deg) translate(-400px,200px);
+   -webkit-transform-origin:right bottom;    
+   -moz-transform-origin:right bottom;    
+   -ms-transform-origin:right bottom;    
+   -o-transform-origin:right bottom;       
+   transform-origin:right bottom;      
+   -webkit-transition:-webkit-transform ease-out .15s, opacity ease-out .2s, visibility 0s linear .2s;   
+   -moz-transition:-moz-transform ease-out .15s, opacity ease-out .2s, visibility 0s linear .2s;   
+   -o-transition:-o-transform ease-out .15s, opacity ease-out .2s, visibility 0s linear .2s;   
+   -ms-transition:-ms-transform ease-out .15s, opacity ease-out .2s, visibility 0s linear .2s;   
+   transition:transform ease-out .15s, opacity ease-out .2s, visibility 0s linear .2s;   
+} 
+.tooltip.active {
+   visibility: visible;
+   opacity:1;
+   -webkit-transform:scale(1) skew(0deg);
+   -moz-transform:scale(1) skew(0deg);
+   -o-transform:scale(1) skew(0deg);
+   -ms-transform:scale(1) skew(0deg);
+   transform:scale(1) skew(0deg);                    
+   -webkit-transition-delay:0s;
+   -moz-transition-delay:0s;
+   -o-transition-delay:0s;
+   -ms-transition-delay:0s;
+   transition-delay:0s;      
+}         
