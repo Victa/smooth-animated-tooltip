@@ -33,13 +33,15 @@ $(function() {
     $box.delegate('[href="#open"]', 'click', function(e) {
         e.preventDefault();  
         var $this = $(this);           
-        ($this, $tooltip).toggleClass('active');
+        $this.toggleClass('active');
+        $tooltip.toggleClass('active');
                                  
         if($tooltip.hasClass('active')) {           
             
             $(document).bind('click.closetooltip', function(e) {
                 if($(e.target).parents('.box').length === 0) {
-                    ($this, $tooltip).removeClass('active');  
+                    $this.removeClass('active');  
+                    $tooltip.removeClass('active');  
                     $(document).unbind('click.closetooltip');
                 }
             });  
